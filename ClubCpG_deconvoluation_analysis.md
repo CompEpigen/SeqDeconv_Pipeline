@@ -180,4 +180,11 @@ df_pc_test$estimate = unlist(estimates)
 df_pc_test$gt = test_gt[rownames(df_pc_test), ctype]
 ```
 
+    ## 
+    ## Attaching package: 'gridExtra'
+
+    ## The following object is masked from 'package:BiocGenerics':
+    ## 
+    ##     combine
+
 ![](ClubCpG_deconvoluation_analysis_files/figure-gfm/gapminder-1.jpeg)<!-- -->
