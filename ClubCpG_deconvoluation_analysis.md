@@ -180,6 +180,10 @@ df_pc_test$estimate = unlist(estimates)
 df_pc_test$gt = test_gt[rownames(df_pc_test), ctype]
 ```
 
+``` r
+library(gridExtra)
+```
+
     ## 
     ## Attaching package: 'gridExtra'
 
@@ -187,4 +191,31 @@ df_pc_test$gt = test_gt[rownames(df_pc_test), ctype]
     ## 
     ##     combine
 
-![](ClubCpG_deconvoluation_analysis_files/figure-gfm/gapminder-1.jpeg)<!-- -->
+``` r
+p1 = ggplot(df_pc_train, aes(x=PC1, y=gt, colour = gt))+
+      geom_point(color="blue")+
+      geom_text(label=as.character(round(df_pc_train$gt,2)), vjust=-0.5, size=3)+
+      theme_classic(base_size = 10)+
+      theme(legend.position = "none")+
+      ggtitle("Reference data after PCA")
+    
+p2 = ggplot(df_pc_test, aes(x=PC1, y=gt, colour = gt))+
+    geom_point(color="blue")+
+    geom_text(label=as.character(round(df_pc_test$gt,2)), vjust=-0.5, size=3)+
+    theme_classic(base_size = 10)+
+    theme(legend.position = "none")+
+    ggtitle("Pseudo-bulks after PCA")
+
+p3=ggplot(df_pc_test, aes(x=estimate, y=gt))+
+      geom_abline(intercept = 0, slope=1, color="gray", linetype="dashed", size=1)+
+      geom_point(size=3)+
+      ylim(c(-1,1.5))+
+      xlim(c(-1,1.5))+
+      theme_classic(base_size=10)+
+      ggtitle(ctype)
+grid.arrange(p1, p2, p3, ncol=3, heights=unit(c(7), c("cm")))
+```
+
+    ## Warning: Removed 3 rows containing missing values (geom_point).
+
+![](ClubCpG_deconvoluation_analysis_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
