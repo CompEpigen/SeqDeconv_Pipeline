@@ -86,23 +86,21 @@ head(df_test[,1:3])
 dim(df_test)
 ```
 
-    ## [1]   20 1843
+\[1\] 20 1843
 
 ``` r
 head(test_gt)
 ```
 
-    ##        Bcell_noncancer diffuse_large_B_cell_lymphoma
-    ## bulk_1       0.1513154                     0.8486846
-    ## bulk_2       0.9452309                     0.0547691
-    ## bulk_3       0.1519955                     0.8480045
-    ## bulk_4       0.1898754                     0.8101246
-    ## bulk_5       0.6798783                     0.3201217
-    ## bulk_6       0.8014090                     0.1985910
+``` 
+   Bcell_noncancer diffuse_large_B_cell_lymphoma
+```
 
-Since the suggested pipeline is reference-based, we generated 100
-reference samples with same cell types and processed in same ways as how
-we processed pseudo-bulk samples.
+bulk\_1 0.1513154 0.8486846 bulk\_2 0.9452309 0.0547691 bulk\_3
+0.1519955 0.8480045 bulk\_4 0.1898754 0.8101246 bulk\_5 0.6798783
+0.3201217 bulk\_6 0.8014090 0.1985910 Since the suggested pipeline is
+reference-based, we generated 100 reference samples with same cell types
+and processed in same ways as how we processed pseudo-bulk samples.
 
 ``` r
 head(df_train[,1:3])
