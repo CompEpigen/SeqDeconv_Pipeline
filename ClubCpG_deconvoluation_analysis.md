@@ -74,13 +74,12 @@ common clusters over all samples.
 head(df_test[,1:3])
 ```
 
-<div data-pagedtable="false">
+``` 
+   chr1_101360300_0.0.0.0 chr1_109968500_0.0.0.0 chr1_111052500_1.1.1.1
+```
 
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["chr1_101360300_0.0.0.0"],"name":[1],"type":["int"],"align":["right"]},{"label":["chr1_109968500_0.0.0.0"],"name":[2],"type":["int"],"align":["right"]},{"label":["chr1_111052500_1.1.1.1"],"name":[3],"type":["int"],"align":["right"]}],"data":[{"1":"23","2":"27","3":"15","_rn_":"bulk_1"},{"1":"24","2":"26","3":"25","_rn_":"bulk_2"},{"1":"20","2":"25","3":"17","_rn_":"bulk_3"},{"1":"23","2":"29","3":"18","_rn_":"bulk_4"},{"1":"20","2":"26","3":"22","_rn_":"bulk_5"},{"1":"22","2":"24","3":"21","_rn_":"bulk_6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-
-</div>
+bulk\_1 23 27 15 bulk\_2 24 26 25 bulk\_3 20 25 17 bulk\_4 23 29 18
+bulk\_5 20 26 22 bulk\_6 22 24 21
 
 ``` r
 dim(df_test)
@@ -106,13 +105,27 @@ and processed in same ways as how we processed pseudo-bulk samples.
 head(df_train[,1:3])
 ```
 
-<div data-pagedtable="false">
-
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["chr1_143283300_1.1.1.1.1.1.1.1.1.1.1"],"name":[1],"type":["int"],"align":["right"]},{"label":["chr1_156186400_1.1.1.1.1.1.1.1.1.1.1.1.1.1"],"name":[2],"type":["int"],"align":["right"]},{"label":["chr1_156186500_1.1.1.1.1.1.1.1.1.1.1.1.1.1.1"],"name":[3],"type":["int"],"align":["right"]}],"data":[{"1":"16","2":"28","3":"14","_rn_":"bulk_1"},{"1":"17","2":"25","3":"15","_rn_":"bulk_2"},{"1":"12","2":"21","3":"18","_rn_":"bulk_3"},{"1":"8","2":"25","3":"16","_rn_":"bulk_4"},{"1":"14","2":"21","3":"18","_rn_":"bulk_5"},{"1":"9","2":"18","3":"19","_rn_":"bulk_6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-
-</div>
+    ##        chr1_143283300_1.1.1.1.1.1.1.1.1.1.1
+    ## bulk_1                                   16
+    ## bulk_2                                   17
+    ## bulk_3                                   12
+    ## bulk_4                                    8
+    ## bulk_5                                   14
+    ## bulk_6                                    9
+    ##        chr1_156186400_1.1.1.1.1.1.1.1.1.1.1.1.1.1
+    ## bulk_1                                         28
+    ## bulk_2                                         25
+    ## bulk_3                                         21
+    ## bulk_4                                         25
+    ## bulk_5                                         21
+    ## bulk_6                                         18
+    ##        chr1_156186500_1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+    ## bulk_1                                           14
+    ## bulk_2                                           15
+    ## bulk_3                                           18
+    ## bulk_4                                           16
+    ## bulk_5                                           18
+    ## bulk_6                                           19
 
 ``` r
 dim(df_train)
@@ -167,4 +180,4 @@ df_pc_test$estimate = unlist(estimates)
 df_pc_test$gt = test_gt[rownames(df_pc_test), ctype]
 ```
 
-![](ClubCpG_deconvoluation_analysis_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](ClubCpG_deconvoluation_analysis_files/figure-gfm/unnamed-chunk-9-1.jpeg)<!-- -->
