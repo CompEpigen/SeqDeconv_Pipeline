@@ -181,7 +181,7 @@ df_pc_test$gt = test_gt[rownames(df_pc_test), ctype]
 ```
 
 ``` r
-library(gridExtra)
+library(gridExtra, quietly = T)
 ```
 
     ## 
