@@ -179,5 +179,5 @@ estimates <- lapply(test_sample_names, fit_lm_model, df_pc_test, model_summary)
 df_pc_test$estimate = unlist(estimates)
 df_pc_test$gt = test_gt[rownames(df_pc_test), ctype]
 ```
-
-![](figure/ClubCpG_res.png "Result of PCA and estimation in Tumor bulk data")<!-- -->
+**Result of PCA and estimation in Tumor bulk data**
+![](figure/ClubCpG_res.png)<!-- -->
