@@ -89,9 +89,6 @@ For the deconvolution, we chose CpGs overlapping with differentially
 methylated regions(DMRs) and ordered those with respect to methylation
 difference.
 
-    ## [1] "chr17_64960389" "chr7_149744127" "chr17_2627241"  "chr8_9762493"  
-    ## [5] "chr5_121647223" "chr2_132795200"
-
     ## [1] "chr10_134597393" "chr7_1268957"    "chr21_38063872"  "chr17_59472943" 
     ## [5] "chr5_170735031"  "chr4_1395529"
 
