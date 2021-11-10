@@ -225,4 +225,4 @@ ObsMix = ObsMix[rownames(ExMix), colnames(ExMix)]
     ## bulk_13                                    4.5                              2.4
     ## bulk_14                                   68.5                             69.0
 
-![](Houseman_deconvoluation_analysis_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](figure/houseman_res.png)<!-- -->
