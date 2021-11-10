@@ -180,4 +180,4 @@ df_pc_test$estimate = unlist(estimates)
 df_pc_test$gt = test_gt[rownames(df_pc_test), ctype]
 ```
 
-![](figure/ClubCpG_res.png)<!-- -->
+![](figure/ClubCpG_res.png "Result of PCA and estimation in Tumor bulk data")<!-- -->
