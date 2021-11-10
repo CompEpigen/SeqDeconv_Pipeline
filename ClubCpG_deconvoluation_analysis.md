@@ -180,4 +180,4 @@ df_pc_test$estimate = unlist(estimates)
 df_pc_test$gt = test_gt[rownames(df_pc_test), ctype]
 ```
 
-![](ClubCpG_deconvoluation_analysis_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](figure/ClubCpG_res.png)<!-- -->
