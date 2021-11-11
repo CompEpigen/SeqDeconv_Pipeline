@@ -6,7 +6,7 @@ sequencing data saved as BAM file. According to authors, this tool has
 been verified only with RRBS data. Detailed usage is described in
 <a href="url">https://github.com/dohlee/prism</a>
 
-# **Run PRISM**
+# ****Run PRISM****
 
 Prism firstly extracts epiloci where a group of reads are mapped in a
 short genomic region. Default settings for read coverage 20 (d=20) and
@@ -37,7 +37,7 @@ using *prism deconvolute* command. Maximum number of cluster is set as
 prism deconvolute -i bulk_1_corrected.met -o bulk_1.result -m 10 
 ```
 
-# **Cacluate cell-type proprtion from the PRSIM result**
+# ****Cacluate cell-type proprtion from the PRSIM result****
 
 Since *PRISM* only infers subclone of each epilocus, we calculated
 proportions of each subclone as the fianl cell-type composition.
