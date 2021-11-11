@@ -151,6 +151,7 @@ from respective module. Again, details are explained in
 [https://github.com/Gavin-Yinld/coMethy](https://github.com/Gavin-Yinld/coMethy).
 
 ``` r
+library(coMethy)
 kmeans_clust <- co_methylation_step1(bulk_mat)
 module <- co_methylation_step2(data=bulk_mat, 
                                  kmeans_result = kmeans_clust, 
