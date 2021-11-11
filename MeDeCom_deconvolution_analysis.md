@@ -28,7 +28,7 @@ head(sample_mat)
 
 #### MeDeCom analysis
 
-You can run MeDeCom using **runMeDeCom** from MeDeCom package. We gave
+You can run MeDeCom using *runMeDeCom* from MeDeCom package. We gave
 smaller numbers for some parameters in this document due to running
 time, but you can find original parameter set up in our
 paper.
@@ -43,8 +43,8 @@ medecom_res <- runMeDeCom(as.matrix(sample_mat), Ks=2:3, lambdas=10^(-5:-2), NCO
     ## [Main:] 168 factorization runs in total
     ## [Main:] finished all jobs. Creating the object
 
-**getProportions** function culculate cell-type composition from the
-result of **runMeDeCom**. MeDeCom creates a result with latent DNA
+*getProportions* function culculate cell-type composition from the
+result of *runMeDeCom*. MeDeCom creates a result with latent DNA
 methylation components (LMCs). You can consider this LMC as a cell type
 in this analysis.
 
