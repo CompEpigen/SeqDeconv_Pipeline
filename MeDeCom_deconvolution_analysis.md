@@ -6,7 +6,7 @@ non-negative matrix factorisation (NMF). In order to apply this method
 to our sequencing data, we converted the data into the array shape and
 chose 2000 CpGs with the highest methylation level varience.
 
-#### Example data
+# ****Example data****
 
 ``` r
 dim(sample_mat)
@@ -26,7 +26,7 @@ head(sample_mat)
     ## [5,]          0          1          0
     ## [6,]          0          1          0
 
-#### MeDeCom analysis
+# ****MeDeCom analysis****
 
 You can run MeDeCom using *runMeDeCom* from MeDeCom package. We gave
 smaller numbers for some parameters in this document due to running
