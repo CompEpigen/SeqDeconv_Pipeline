@@ -11,7 +11,7 @@ contains cell-type proportion information (either 0.0 or 1.0 for pure
 cell-type reference data) and *ref\_meth* contains methylation values at
 each CpG and in each sample.
 
-#### Reference data
+# ****Reference data****
 
 ``` r
 head(ref_pheno)
@@ -44,7 +44,7 @@ head(ref_meth)
     ## chr5_170735031  0.1818182 0.1153846 0.05882353 0.2400000
     ## chr4_1395529    0.6000000 0.5000000 0.75000000 0.8000000
 
-#### Pseudo-bulk samples
+# ****Pseudo-bulk samples****
 
 We created a same matrix (CpGs x samples) for our pseudo-bulk samples as
 a test
@@ -83,7 +83,7 @@ head(test_meth)
     ## chr5_170735031  0.2692308 0.3000000
     ## chr4_1395529    0.6666667 0.5833333
 
-#### DMRs
+# ****DMRs****
 
 For the deconvolution, we chose CpGs overlapping with differentially
 methylated regions(DMRs) and ordered those with respect to methylation
@@ -92,13 +92,13 @@ difference.
     ## [1] "chr10_134597393" "chr7_1268957"    "chr21_38063872"  "chr17_59472943" 
     ## [5] "chr5_170735031"  "chr4_1395529"
 
-## Houseman algorithm
+# ****Houseman's method algorithm****
 
 We followed up the implementation attached as an additional file in the
 paper. You can download the code below.
 
 Code : *Additional file 2* in
-<a href="url">https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-13-86</a>
+[https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-13-86](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-13-86)
 
 #### Modeling setup
 
