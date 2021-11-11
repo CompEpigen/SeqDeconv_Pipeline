@@ -1,4 +1,4 @@
-csmFinder\_coMethy\_deconvolution\_analysis
+csmFinder+coMethy cell-type deconvolution analysis
 ================
 Yunhee Jeong
 10 November 2021
@@ -19,7 +19,7 @@ bismark_methylation_extractor --comprehensive -o CpG_context_bulk_1.txt.gz --gzi
 csmFinder extracts putative cell-subset specific DNA methylation (pCSM)
 loci from methylomes saved in the bismark cytosine report file. Details
 of each step are in
-<a href="url"><https://github.com/Gavin-Yinld/csmFinder>\<\>.
+[https://github.com/Gavin-Yinld/csmFinder](https://github.com/Gavin-Yinld/csmFinder).
 
 ``` r
 library(bedtoolsr)
@@ -148,7 +148,7 @@ coMethy package is comprised of two steps. Firstly, it finds hypo-, mid-
 and hyper-methylatio groups through k-means clustering. Secondly, from
 these clusters, it makes co-methylation module and extract eigen-loci
 from respective module. Again, details are explained in
-<a href="url"><https://github.com/Gavin-Yinld/coMethy>\<\>.
+[https://github.com/Gavin-Yinld/coMethy](https://github.com/Gavin-Yinld/coMethy).
 
 ``` r
 kmeans_clust <- co_methylation_step1(bulk_mat)
