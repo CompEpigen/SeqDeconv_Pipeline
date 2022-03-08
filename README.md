@@ -27,6 +27,8 @@ genome bisulfite sequencing data. Genome biology, 21(1):1–23, 2020.](https://d
 - __csmFinder+coMethy:__ [Liduo Yin, Yanting Luo, Xiguang Xu, Shiyu Wen, Xiaowei Wu, Xuemei Lu, and Hehuang Xie. Virtual methylome
 dissection facilitated by single-cell analyses. Epigenetics & chromatin, 12(1):1–13, 2019.](https://doi.org/10.1186/s13072-019-0310-9)
 
+- __DXM:__ [Fong, Jerry, et al. "Determining subpopulation methylation profiles from bisulfite sequencing data of heterogeneous samples using DXM." Nucleic acids research 49.16 (2021): e93-e93.](https://doi.org/10.1093/nar/gkab516)
+
 - __MethylPurify:__ [Xiaoqi Zheng, Qian Zhao, Hua-Jun Wu, Wei Li, Haiyun Wang, Clifford A Meyer, Qian Alvin Qin, Han Xu,
 Chongzhi Zang, Peng Jiang, et al. Methylpurify: tumor purity deconvolution and differential methylation detection
 from single tumor dna methylomes. Genome biology, 15(7):1–13, 2014.](https://doi.org/10.1186/s13059-014-0419-x)
