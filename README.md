@@ -5,7 +5,7 @@
 
 ## Introduction 
 
-Analysis of cell-type heterogeneity based on cell mixture (bulk) omic profiles is an active area of research, known as cell-type deconvolution. Sequencing-based DNA methylation data such as whole genome bisulfite sequencing (WGBS), in particular, has high capacity for cell-type deconvolution through leveraging read-level information. We thoroughly evaluated five previously published decovolution methods for sequencing data: Bayesian epiallele detection (BED), PRISM, csmFinder + coMethy, ClubCpg and MethylPurify, together with two array-based methods, MeDeCom and Houseman, as a comparison group. This github page describes the pipeline of each method including all the details (e.g. input data format, how to analyse the output results).
+Analysis of cell-type heterogeneity based on cell mixture (bulk) omic profiles is an active area of research, known as cell-type deconvolution. Sequencing-based DNA methylation data such as whole genome bisulfite sequencing (WGBS), in particular, has high capacity for cell-type deconvolution through leveraging read-level information. We thoroughly evaluated five previously published decovolution methods for sequencing data: Bayesian epiallele detection (BED), PRISM, csmFinder + coMethy, ClubCpG, DXM and MethylPurify, together with two array-based methods, MeDeCom and Houseman, as a comparison group. This github page describes the pipeline of each method including all the details (e.g. input data format, how to analyse the output results).
 
 ## Our evaluation results
 
