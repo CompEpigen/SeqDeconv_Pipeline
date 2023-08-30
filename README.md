@@ -9,7 +9,7 @@ Analysis of cell-type heterogeneity based on cell mixture (bulk) omic profiles i
 
 ## Our evaluation results
 
-**This work is published in Briefins in Bioinformatics** Please find the results and our paper here [https://doi.org/10.1093/bib/bbac248
+**This work is published in Briefings in Bioinformatics** Please find the results and our paper here [https://doi.org/10.1093/bib/bbac248
 ](https://doi.org/10.1093/bib/bbac248)
 
 
